@@ -10,12 +10,11 @@ def check(words,note):
     
     for i in words:
         c = {j:i.count(j) for j in i}
-        result = all(key in a for key in c)
-        if result:
-            res = all(c[key] <= a[key] for key in c)
-            if res:
-                return i
-            else:
-                print('-')
+        result = all(key in a for key in c) and all(c[key] <= a[key] for key in c)
+        return [result,i]
             
-check(words,note3)
+a= check(words,note1)
+if a[0]:
+    print(a[1])
+else:
+    print('-')
