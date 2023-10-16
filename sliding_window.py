@@ -1,17 +1,20 @@
-a = [7,1,5,6,4,3]
+def sliding_window(arr, k):
+    n = len(arr)
+    if n < k:
+        return []
 
-def buy_sell(a):
-    l,r = 0,1
-    maxp =0
+    result = []
+    for i in range(n - k + 1):
+        window = arr[i:i + k]
+        result.append(window)
+    
+    return result
 
-    while r< len(a):
-        if a[l] < a[r]:
-            profit = a[r] - a[l]
-            maxp = max(maxp,profit)
-        else:
-            l = r
-        r+=1
-    return maxp
+# Example usage:
 
-profit = buy_sell(a)
-print(profit)
+window_size = 3
+
+windows = sliding_window(my_list, window_size)
+print("Sliding Windows:")
+for window in windows:
+    print(window)
