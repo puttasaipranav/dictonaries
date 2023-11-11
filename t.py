@@ -1,2 +1,5 @@
-a = {'Name':'sai','django':'dwevkjblaskcxoasuvx'}
-print(a['django'])
+def main():
+    return -1
+
+a =main()
+print(a)

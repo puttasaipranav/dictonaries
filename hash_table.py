@@ -7,7 +7,7 @@ def find_pair_with_given_sum(arr, x):
             sum_found = True
         else:
             my_hash[i] = True
-    
+
     if not sum_found:
         print("Pair with sum {} is NOT Present.".format(x))
 
