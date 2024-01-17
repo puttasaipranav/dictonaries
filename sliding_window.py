@@ -12,8 +12,8 @@ def sliding_window(arr, k):
 
 # Example usage:
 
-window_size = 3
-
+window_size = 2
+my_list = [1,3,4,5,5,6]
 windows = sliding_window(my_list, window_size)
 print("Sliding Windows:")
 for window in windows:

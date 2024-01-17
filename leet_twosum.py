@@ -11,4 +11,3 @@ nums = [4,2,3]
 target = 6
 a = find_pairs_with_sum(nums,target)
 print(a)
-    
